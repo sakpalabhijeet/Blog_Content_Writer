@@ -1,0 +1,10 @@
+.env
+venv/
+data/
+tests/
+scripts/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+Blog_Writer.py
+docker-compose*.yml

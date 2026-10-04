@@ -1,0 +1,15 @@
+langgraph>=1.2
+langgraph-checkpoint-sqlite>=3.1
+langchain-core>=1.6
+langchain-ollama>=1.1
+pydantic>=2.13
+python-dotenv>=1.2
+pyyaml>=6.0
+httpx>=0.28
+feedparser>=6.0
+ddgs>=9.16
+trafilatura>=2.2
+imap-tools>=1.15
+markdown>=3.10
+graphviz>=0.21
+google-genai>=1.0   # optional: Gemini images

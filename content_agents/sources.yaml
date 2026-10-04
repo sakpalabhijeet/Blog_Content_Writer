@@ -1,0 +1,51 @@
+# Free, no-key research sources. Edit freely; broken feeds are skipped (see `python -m content_agents check`).
+# "{year}" in queries is replaced with the current year.
+# Optional per-source `days:` widens the recency window (useful for evergreen finance/mystery sources).
+
+blog:
+  rss:
+    - {name: Hugging Face Blog, url: "https://huggingface.co/blog/feed.xml"}
+    - {name: OpenAI News, url: "https://openai.com/news/rss.xml"}
+    - {name: Google AI Blog, url: "https://blog.google/technology/ai/rss/"}
+    - {name: Google DeepMind, url: "https://deepmind.google/blog/rss.xml"}
+    - {name: GitHub Blog AI/ML, url: "https://github.blog/ai-and-ml/feed/"}
+    - {name: AWS Machine Learning, url: "https://aws.amazon.com/blogs/machine-learning/feed/"}
+    - {name: MIT Technology Review AI, url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"}
+    - {name: Import AI, url: "https://importai.substack.com/feed"}
+    - {name: Latent Space, url: "https://www.latent.space/feed"}
+    - {name: Ahead of AI, url: "https://magazine.sebastianraschka.com/feed"}
+    - {name: Simon Willison, url: "https://simonwillison.net/atom/everything/"}
+    - {name: TLDR AI, url: "https://tldr.tech/api/rss/ai"}
+  hf_daily_papers: true
+  hn:
+    min_points: 80
+    queries: ["LLM", "AI agent", "OpenAI", "Anthropic Claude", "Gemini", "open source model", "AI coding"]
+  github:
+    queries: ["topic:llm", "topic:ai-agents", "topic:generative-ai", "topic:mcp"]
+  reddit: [LocalLLaMA, MachineLearning, ChatGPTCoding]
+  ddg_news:
+    - "new AI model release developers"
+    - "AI coding assistant update"
+    - "open source LLM release"
+    - "AI developer tools launch"
+    - "AI skills in demand for software engineers {year}"
+
+youtube:
+  rss:
+    - {name: ScienceDaily, url: "https://www.sciencedaily.com/rss/top/science.xml"}
+    - {name: Phys.org, url: "https://phys.org/rss-feed/"}
+    - {name: Live Science, url: "https://www.livescience.com/feeds/all"}
+    - {name: NASA, url: "https://www.nasa.gov/feed/"}
+    - {name: Smithsonian, url: "https://www.smithsonianmag.com/rss/latest_articles/"}
+    - {name: Atlas Obscura, url: "https://www.atlasobscura.com/feeds/latest"}
+    - {name: Livemint Money, url: "https://www.livemint.com/rss/money", days: 7}
+    - {name: ET Wealth, url: "https://economictimes.indiatimes.com/wealth/rssfeeds/837555174.cms", days: 7}
+    - {name: Atlas Obscura Places, url: "https://www.atlasobscura.com/feeds/places", days: 30}
+  reddit: [UnresolvedMysteries, todayilearned, space, science, Futurology, IndiaInvestments, personalfinanceindia]
+  ddg_news:
+    - "unsolved mystery new discovery"
+    - "scientists discover incredible"
+    - "strange technology breakthrough"
+    - {q: "money saving tips India middle class", days: 30}
+    - {q: "new savings scheme India {year}", days: 30}
+    - {q: "ancient mystery archaeologists", days: 14}
